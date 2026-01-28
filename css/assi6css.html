@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lists and Links Styling</title>
+    <style>
+        /* Unordered list with custom bullets */
+        ul {
+            list-style-type: square; /* try circle or disc */
+            margin: 20px;
+        }
+
+        /* Ordered list with Roman numerals */
+        ol {
+            list-style-type: upper-roman;
+            margin: 20px;
+        }
+
+        /* Link styling */
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: darkblue;
+        }
+
+        a:active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Unordered List</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h2>Ordered List</h2>
+    <ol>
+        <li>Design</li>
+        <li>Develop</li>
+        <li>Deploy</li>
+    </ol>
+
+    <h2>Styled Links</h2>
+    <p>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </p>
+
+</body>
+</html>
