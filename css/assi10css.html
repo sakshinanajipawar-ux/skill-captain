@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Layout Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header and Footer */
+    header, footer {
+      display: flex;
+      justify-content: center; /* horizontal centering */
+      align-items: center;     /* vertical centering */
+      height: 80px;
+      background: #333;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Flex container for boxes */
+    .flex-container {
+      display: flex;
+      justify-content: space-around; /* space between or around */
+      align-items: center;           /* vertical centering */
+      margin: 20px;
+      gap: 10px;                     /* optional spacing between boxes */
+      min-height: 150px;
+    }
+
+    /* Individual boxes */
+    .box {
+      background: lightblue;
+      text-align: center;
+      padding: 20px;
+      color: #333;
+      font-weight: bold;
+
+      /* Flex properties */
+      flex-basis: 100px;   /* initial width */
+      flex-grow: 1;        /* allows box to grow */
+      flex-shrink: 1;      /* allows box to shrink on smaller screens */
+    }
+
+    /* Different grow values for each box */
+    .box1 { flex-grow: 1; }
+    .box2 { flex-grow: 2; }
+    .box3 { flex-grow: 1; }
+
+    /* Optional: responsive coloring for clarity */
+    .box1 { background: lightcoral; }
+    .box2 { background: lightgreen; }
+    .box3 { background: lightblue; }
+  </style>
+</head>
+<body>
+
+  <header>My Flexbox Header</header>
+
+  <div class="flex-container">
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+  </div>
+
+  <footer>My Flexbox Footer</footer>
+
+</body>
+</html>
