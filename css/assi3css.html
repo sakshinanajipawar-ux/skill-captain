@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Formats and Background Demo</title>
+    <style>
+        /* Header using a named color */
+        header {
+            background-color: teal;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Section using HEX color */
+        section {
+            background-color: #f4a261;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        /* Div using RGB for text and HSL for background */
+        .color-box {
+            color: rgb(255, 255, 255);
+            background-color: hsl(210, 50%, 40%);
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        /* Footer with background image */
+        footer {
+            background-image: url("https://via.placeholder.com/1200x300");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CSS Color Formats</h1>
+    </header>
+
+    <section>
+        <p>This section uses a HEX color for its background.</p>
+    </section>
+
+    <div class="color-box">
+        <p>This div uses RGB for text color and HSL for background color.</p>
+    </div>
+
+    <footer>
+        <p>Footer with background image</p>
+    </footer>
+
+</body>
+</html>
