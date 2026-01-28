@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Layout & Visibility Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    /* Buttons with different display values */
+    .block-btn {
+      display: block;
+      margin-bottom: 10px;
+      background: lightblue;
+    }
+
+    .inline-btn {
+      display: inline;
+      background: lightgreen;
+    }
+
+    .inline-block-btn {
+      display: inline-block;
+      width: 150px;
+      height: 40px;
+      background: lightcoral;
+      margin-left: 10px;
+    }
+
+    /* Paragraph visibility examples */
+    .hidden-text {
+      visibility: hidden;
+    }
+
+    .none-text {
+      display: none;
+    }
+
+    /* Overflow container */
+    .container {
+      width: 200px;
+      height: 100px;
+      border: 2px solid black;
+      margin-top: 20px;
+    }
+
+    .overflow-visible {
+      overflow: visible;
+    }
+
+    .overflow-hidden {
+      overflow: hidden;
+    }
+
+    .overflow-scroll {
+      overflow: scroll;
+    }
+
+    .overflow-auto {
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Display Property (Buttons)</h2>
+  <button class="block-btn">Display: block</button>
+  <button class="inline-btn">Display: inline</button>
+  <button class="inline-block-btn">Display: inline-block</button>
+
+  <h2>Visibility vs Display</h2>
+  <p>This paragraph is visible.</p>
+  <p class="hidden-text">This paragraph has visibility: hidden.</p>
+  <p class="none-text">This paragraph has display: none.</p>
+
+  <h2>Overflow Examples</h2>
+
+  <h4>overflow: visible</h4>
+  <div class="container overflow-visible">
+    This is a lot of content that will overflow outside the box.
+  </div>
+
+  <h4>overflow: hidden</h4>
+  <div class="container overflow-hidden">
+    This is a lot of content that will overflow outside the box.
+  </div>
+
+  <h4>overflow: scroll</h4>
+  <div class="container overflow-scroll">
+    This is a lot of content that will overflow outside the box.
+  </div>
+
+  <h4>overflow: auto</h4>
+  <div class="container overflow-auto">
+    This is a lot of content that will overflow outside the box.
+  </div>
+
+</body>
+</html>
