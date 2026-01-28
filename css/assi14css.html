@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transitions & Animations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 40px;
+    }
+
+    /* =========================
+       BUTTON WITH TRANSITIONS
+    ========================== */
+    .btn {
+      background-color: #3498db;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+
+      /* Smooth transitions */
+      transition: 
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #2ecc71;
+      color: #fff;
+      transform: scale(1.1) rotate(2deg);
+    }
+
+    /* =========================
+       SLIDE-IN CARD
+    ========================== */
+    .card {
+      width: 300px;
+      margin-top: 40px;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+      animation: slideIn 0.8s ease forwards;
+      animation-delay: 1s;
+      opacity: 0;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    /* =========================
+       LOADER ANIMATION
+    ========================== */
+    .loader {
+      margin-top: 40px;
+      width: 50px;
+      height: 50px;
+      border: 5px solid #ddd;
+      border-top: 5px solid #3498db;
+      border-radius: 50%;
+
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="btn">Hover Me</button>
+
+  <div class="card">
+    <h3>Animated Card</h3>
+    <p>This card slides in from the left after 1 second.</p>
+  </div>
+
+  <div class="loader"></div>
+
+</body>
+</html>
